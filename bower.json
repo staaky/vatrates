@@ -1,0 +1,23 @@
+{
+  "name": "vatrates",
+  "description": "Up-to-date European VAT Rates",
+  "version": "1.0.0",
+  "keywords": [
+    "VAT",
+    "rates",
+    "tax",
+    "EU"
+  ],
+  "main": [
+    "vatrates.js"
+  ],
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "/.*",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json",
+    "README.md"
+  ]
+}

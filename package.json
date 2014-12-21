@@ -1,0 +1,16 @@
+{
+  "name": "vatrates",
+  "title": "VATRates",
+  "version": "1.0.0",
+  "description": "Up-to-date European VAT Rates",
+  "author": {
+    "name": "Nick Stakenburg",
+    "url": "http://nickstakenburg.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://choosealicense.com/licenses/mit/"
+    }
+  ]
+}
