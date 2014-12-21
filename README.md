@@ -14,6 +14,13 @@ VAT rates are updated using data provided by the [European Commission](http://ec
 
 If you notice anything out of date or would like to contribute, please create an issue or a pull request.
 
+## Install
+
+Pick the files you need or install via [Bower](http://bower.io) or npm:
+
+* `bower install vatrates`
+* `npm install vatrates`
+
 ## License
 
 Everything is [MIT Licensed](http://choosealicense.com/licenses/mit/), have at it!
