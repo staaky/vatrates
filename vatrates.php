@@ -1,6 +1,6 @@
 <?php
 /*!
- * VATRates - v1.0.1
+ * VATRates - v1.0.2
  * MIT License
  */
 
@@ -66,7 +66,7 @@ $VATRates = array(
   ),
 
   "DK" => array(
-    "country" => "Denkmark",
+    "country" => "Denmark",
     "rates" => array(
       "superReduced" => false,
       "reduced" => false,

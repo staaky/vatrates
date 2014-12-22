@@ -1,5 +1,5 @@
 /*!
- * VATRates - v1.0.1
+ * VATRates - v1.0.2
  * MIT License
  */
 
@@ -67,7 +67,7 @@ var VATRates = {
   },
 
   "DK": {
-    "country": "Denkmark",
+    "country": "Denmark",
     "rates": {
       "superReduced": false,
       "reduced": false,
