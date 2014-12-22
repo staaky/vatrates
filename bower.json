@@ -1,13 +1,14 @@
 {
   "name": "vatrates",
   "description": "Up-to-date European VAT Rates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "VAT",
     "rates",
     "tax",
     "EU"
   ],
+  "homepage": "http://github.com/staaky/vatrates",
   "main": [
     "vatrates.js"
   ],

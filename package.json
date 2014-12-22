@@ -1,8 +1,20 @@
 {
   "name": "vatrates",
   "title": "VATRates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Up-to-date European VAT Rates",
+  "keywords": [
+    "VAT",
+    "rates",
+    "tax",
+    "EU"
+  ],
+  "homepage": "http://github.com/staaky/vatrates",
+  "bugs": "http://github.com/staaky/vatrates/issues",
+  "repository": {
+    "type" : "git",
+    "url" : "http://github.com/staaky/vatrates.git"
+  },
   "author": {
     "name": "Nick Stakenburg",
     "url": "http://nickstakenburg.com"

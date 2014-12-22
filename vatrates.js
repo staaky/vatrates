@@ -1,5 +1,5 @@
 /*!
- * VATRates - v1.0.0
+ * VATRates - v1.0.1
  * MIT License
  */
 
