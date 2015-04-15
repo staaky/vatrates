@@ -61,7 +61,7 @@ var VATRates = {
     "rates": {
       "superReduced": false,
       "reduced": [7],
-      "standard": 21,
+      "standard": 19,
       "parking": false
     }
   },
@@ -281,6 +281,16 @@ var VATRates = {
     "rates": {
       "superReduced": false,
       "reduced": [10],
+      "standard": 20,
+      "parking": false
+    }
+  },
+
+  "UK": {
+    "country": "United Kingdom",
+    "rates": {
+      "superReduced": false,
+      "reduced": [5],
       "standard": 20,
       "parking": false
     }

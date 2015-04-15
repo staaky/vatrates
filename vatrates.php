@@ -60,7 +60,7 @@ $VATRates = array(
     "rates" => array(
       "superReduced" => false,
       "reduced" => array(7),
-      "standard" => 21,
+      "standard" => 19,
       "parking" => false
     )
   ),
@@ -280,6 +280,16 @@ $VATRates = array(
     "rates" => array(
       "superReduced" => false,
       "reduced" => array(10),
+      "standard" => 20,
+      "parking" => false
+    )
+  ),
+
+  "UK" => array(
+    "country" => "United Kingdom",
+    "rates" => array(
+      "superReduced" => false,
+      "reduced" => array(5),
       "standard" => 20,
       "parking" => false
     )
