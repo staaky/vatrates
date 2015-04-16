@@ -86,6 +86,28 @@ var VATRates = {
     }
   },
 
+  "EL": {
+    "hasISODuplicate": "GR",
+    "country": "Greece",
+    "rates": {
+      "superReduced": false,
+      "reduced": [6.5, 13],
+      "standard": 23,
+      "parking": false
+    }
+  },
+
+  "GR": {
+    "isISODuplicateOf": "EL",
+    "country": "Greece",
+    "rates": {
+      "superReduced": false,
+      "reduced": [6.5, 13],
+      "standard": 23,
+      "parking": false
+    }
+  },
+
   "ES": {
     "country": "Spain",
     "rates": {
@@ -112,26 +134,6 @@ var VATRates = {
       "superReduced": 2.1,
       "reduced": [5.5, 10],
       "standard": 20,
-      "parking": false
-    }
-  },
-
-  "GB": {
-    "country": "United Kingdom",
-    "rates": {
-      "superReduced": false,
-      "reduced": [5],
-      "standard": 20,
-      "parking": false
-    }
-  },
-
-  "GR": {
-    "country": "Greece",
-    "rates": {
-      "superReduced": false,
-      "reduced": [6.5, 13],
-      "standard": 23,
       "parking": false
     }
   },
@@ -287,6 +289,18 @@ var VATRates = {
   },
 
   "UK": {
+    "hasISODuplicate": "GB",
+    "country": "United Kingdom",
+    "rates": {
+      "superReduced": false,
+      "reduced": [5],
+      "standard": 20,
+      "parking": false
+    }
+  },
+
+  "GB": {
+    "isISODuplicateOf": "UK",
     "country": "United Kingdom",
     "rates": {
       "superReduced": false,

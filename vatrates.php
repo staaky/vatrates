@@ -85,6 +85,28 @@ $VATRates = array(
     )
   ),
 
+  "EL" => array(
+    "hasISODuplicate" => "GR",
+    "country" => "Greece",
+    "rates" => array(
+      "superReduced" => false,
+      "reduced" => array(6.5, 13),
+      "standard" => 23,
+      "parking" => false
+    )
+  ),
+
+  "GR" => array(
+    "isISODuplicateOf" => "EL",
+    "country" => "Greece",
+    "rates" => array(
+      "superReduced" => false,
+      "reduced" => array(6.5, 13),
+      "standard" => 23,
+      "parking" => false
+    )
+  ),
+
   "ES" => array(
     "country" => "Spain",
     "rates" => array(
@@ -111,26 +133,6 @@ $VATRates = array(
       "superReduced" => 2.1,
       "reduced" => array(5.5, 10),
       "standard" => 20,
-      "parking" => false
-    )
-  ),
-
-  "GB" => array(
-    "country" => "United Kingdom",
-    "rates" => array(
-      "superReduced" => false,
-      "reduced" => array(5),
-      "standard" => 20,
-      "parking" => false
-    )
-  ),
-
-  "GR" => array(
-    "country" => "Greece",
-    "rates" => array(
-      "superReduced" => false,
-      "reduced" => array(6.5, 13),
-      "standard" => 23,
       "parking" => false
     )
   ),
@@ -286,6 +288,18 @@ $VATRates = array(
   ),
 
   "UK" => array(
+    "hasISODuplicate" => "GB",
+    "country" => "United Kingdom",
+    "rates" => array(
+      "superReduced" => false,
+      "reduced" => array(5),
+      "standard" => 20,
+      "parking" => false
+    )
+  ),
+
+  "GB" => array(
+    "isISODuplicateOf" => "UK",
     "country" => "United Kingdom",
     "rates" => array(
       "superReduced" => false,
