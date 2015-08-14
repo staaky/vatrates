@@ -11,6 +11,7 @@
   ],
   "homepage": "http://github.com/staaky/vatrates",
   "bugs": "http://github.com/staaky/vatrates/issues",
+  "main": "./vatrates.js",
   "repository": {
     "type" : "git",
     "url" : "http://github.com/staaky/vatrates.git"
