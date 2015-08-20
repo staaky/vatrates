@@ -1,9 +1,21 @@
 /*!
- * VATRates - v1.0.2
+ * VATRates - v1.1.0
  * MIT License
  */
 
-(function(window) {
+// UMD wrapper
+(function(root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD
+    define([], factory);
+  } else if (typeof module === 'object' && module.exports) {
+    // Node/CommonJS
+    module.exports = factory();
+  } else {
+    // Browser global
+    root.VATRates = factory();
+  }
+}(this, function() {
 
 var VATRates = {
   "AT": {
@@ -311,16 +323,6 @@ var VATRates = {
   }
 };
 
-// export
-if (typeof define === 'function' && define.amd) {
-  // AMD
-  define(VATRates);
-} else if (typeof exports === 'object') {
-  // CommonJS
-  module.exports = VATRates;
-} else {
-  // global
-  window.VATRates = VATRates;
-}
+return VATRates;
 
-})(this);
+}));

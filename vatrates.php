@@ -1,6 +1,6 @@
 <?php
 /*!
- * VATRates - v1.0.2
+ * VATRates - v1.1.0
  * MIT License
  */
 
