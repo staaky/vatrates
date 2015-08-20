@@ -1,7 +1,7 @@
 {
   "name": "vatrates",
   "description": "Up-to-date European VAT Rates",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "keywords": [
     "VAT",
     "rates",
@@ -10,11 +10,13 @@
   ],
   "homepage": "http://github.com/staaky/vatrates",
   "main": [
-    "vatrates.js"
+    "./vatrates.js"
   ],
   "ignore": [
     "node_modules",
     "bower_components",
+    "src",
+    "tests",
     "/.*",
     "bower.json",
     "Gruntfile.js",

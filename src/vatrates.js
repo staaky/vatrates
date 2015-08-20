@@ -1,4 +1,24 @@
-{
+/*!
+ * VATRates - v<%= pkg.version %>
+ * Last update: <%= grunt.template.today("isoDateTime") %>
+ * MIT License
+ */
+
+// UMD wrapper
+(function(root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD
+    define([], factory);
+  } else if (typeof module === 'object' && module.exports) {
+    // Node/CommonJS
+    module.exports = factory();
+  } else {
+    // Browser global
+    root.VATRates = factory();
+  }
+}(this, function() {
+
+var VATRates = {
   "AT": {
     "country": "Austria",
     "rates": {
@@ -302,4 +322,8 @@
       "parking": false
     }
   }
-}
+};
+
+return VATRates;
+
+}));

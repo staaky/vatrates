@@ -1,7 +1,7 @@
 {
   "name": "vatrates",
   "title": "VATRates",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Up-to-date European VAT Rates",
   "keywords": [
     "VAT",
@@ -13,8 +13,8 @@
   "bugs": "http://github.com/staaky/vatrates/issues",
   "main": "./vatrates.js",
   "repository": {
-    "type" : "git",
-    "url" : "http://github.com/staaky/vatrates.git"
+    "type": "git",
+    "url": "http://github.com/staaky/vatrates.git"
   },
   "author": {
     "name": "Nick Stakenburg",
@@ -25,5 +25,9 @@
       "type": "MIT",
       "url": "http://choosealicense.com/licenses/mit/"
     }
-  ]
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.1"
+  }
 }

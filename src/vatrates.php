@@ -1,7 +1,7 @@
 <?php
 /*!
- * VATRates - v1.2.0
- * Last update: 2015-08-20T19:37:53
+ * VATRates - v<%= pkg.version %>
+ * Last update: <%= grunt.template.today("isoDateTime") %>
  * MIT License
  */
 

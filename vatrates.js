@@ -1,5 +1,6 @@
 /*!
- * VATRates - v1.1.0
+ * VATRates - v1.2.0
+ * Last update: 2015-08-20T19:37:53
  * MIT License
  */
 
@@ -34,7 +35,7 @@ var VATRates = {
       "superReduced": false,
       "reduced": [6, 12],
       "standard": 21,
-      "parking": false
+      "parking": 12
     }
   },
 
@@ -62,7 +63,7 @@ var VATRates = {
     "country": "Czech Republic",
     "rates": {
       "superReduced": false,
-      "reduced": [15],
+      "reduced": [10, 15],
       "standard": 21,
       "parking": false
     }
@@ -204,9 +205,9 @@ var VATRates = {
     "country": "Luxembourg",
     "rates": {
       "superReduced": 3,
-      "reduced": [6, 12],
+      "reduced": [8],
       "standard": 17,
-      "parking": 12
+      "parking": 14
     }
   },
 
