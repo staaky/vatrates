@@ -91,7 +91,7 @@ $VATRates = array(
     "country" => "Greece",
     "rates" => array(
       "superReduced" => false,
-      "reduced" => array(6.5, 13),
+      "reduced" => array(6, 13),
       "standard" => 23,
       "parking" => false
     )
@@ -102,7 +102,7 @@ $VATRates = array(
     "country" => "Greece",
     "rates" => array(
       "superReduced" => false,
-      "reduced" => array(6.5, 13),
+      "reduced" => array(6, 13),
       "standard" => 23,
       "parking" => false
     )
@@ -253,7 +253,7 @@ $VATRates = array(
     "rates" => array(
       "superReduced" => false,
       "reduced" => array(5, 9),
-      "standard" => 24,
+      "standard" => 20,
       "parking" => false
     )
   ),

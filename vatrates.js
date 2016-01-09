@@ -1,6 +1,6 @@
 /*!
- * VATRates - v1.2.0
- * Last update: 2015-08-20T19:37:53
+ * VATRates - v1.2.1
+ * Last update: 2016-01-09T01:15:13
  * MIT License
  */
 
@@ -104,7 +104,7 @@ var VATRates = {
     "country": "Greece",
     "rates": {
       "superReduced": false,
-      "reduced": [6.5, 13],
+      "reduced": [6, 13],
       "standard": 23,
       "parking": false
     }
@@ -115,7 +115,7 @@ var VATRates = {
     "country": "Greece",
     "rates": {
       "superReduced": false,
-      "reduced": [6.5, 13],
+      "reduced": [6, 13],
       "standard": 23,
       "parking": false
     }
@@ -266,7 +266,7 @@ var VATRates = {
     "rates": {
       "superReduced": false,
       "reduced": [5, 9],
-      "standard": 24,
+      "standard": 20,
       "parking": false
     }
   },

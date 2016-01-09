@@ -6,7 +6,7 @@ include '../../vatrates/vatrates.php';
 <head>
 <title>VATRates - Tests</title>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="../../vatrates/vatrates.js"></script>
 <script type="text/javascript" src="js/table-js.js"></script>
 <script type="text/javascript" src="js/tests.js"></script>
