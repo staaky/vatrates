@@ -92,7 +92,7 @@ $VATRates = array(
     "rates" => array(
       "superReduced" => false,
       "reduced" => array(6, 13),
-      "standard" => 23,
+      "standard" => 24,
       "parking" => false
     )
   ),
@@ -103,7 +103,7 @@ $VATRates = array(
     "rates" => array(
       "superReduced" => false,
       "reduced" => array(6, 13),
-      "standard" => 23,
+      "standard" => 24,
       "parking" => false
     )
   ),

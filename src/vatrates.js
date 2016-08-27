@@ -105,7 +105,7 @@ var VATRates = {
     "rates": {
       "superReduced": false,
       "reduced": [6, 13],
-      "standard": 23,
+      "standard": 24,
       "parking": false
     }
   },
@@ -116,7 +116,7 @@ var VATRates = {
     "rates": {
       "superReduced": false,
       "reduced": [6, 13],
-      "standard": 23,
+      "standard": 24,
       "parking": false
     }
   },

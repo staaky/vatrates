@@ -1,7 +1,7 @@
 <?php
 /*!
- * VATRates - v1.2.1
- * Last update: 2016-01-09T01:15:13
+ * VATRates - v1.2.2
+ * Last update: 2016-08-27T16:28:51
  * MIT License
  */
 
@@ -92,7 +92,7 @@ $VATRates = array(
     "rates" => array(
       "superReduced" => false,
       "reduced" => array(6, 13),
-      "standard" => 23,
+      "standard" => 24,
       "parking" => false
     )
   ),
@@ -103,7 +103,7 @@ $VATRates = array(
     "rates" => array(
       "superReduced" => false,
       "reduced" => array(6, 13),
-      "standard" => 23,
+      "standard" => 24,
       "parking" => false
     )
   ),
