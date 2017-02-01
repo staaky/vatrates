@@ -266,7 +266,7 @@ var VATRates = {
     "rates": {
       "superReduced": false,
       "reduced": [5, 9],
-      "standard": 20,
+      "standard": 19,
       "parking": false
     }
   },
