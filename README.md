@@ -4,7 +4,7 @@ _Up-to-date European VAT Rates_
 
 As of 1 January 2015 new EU VAT regulations change the way in which VAT (consumer tax) is charged on digital services. Instead of the tax rate being applied according to where the supplier is located, the seller must determine where the buyer is located and apply the relevant local rate of tax to the purchaser.
 
-See: http://ec.europa.eu/taxation_customs/taxation/vat/how_vat_works/telecom
+See: http://ec.europa.eu/taxation_customs/business/vat/telecommunications-broadcasting-electronic-services_en
 
 This repository provides files in different formats (Javascript, JSON & PHP) to help you apply these local VAT rates.
 
