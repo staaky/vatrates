@@ -1,6 +1,6 @@
 /*!
- * VATRates - v1.2.2
- * Last update: 2016-08-27T16:28:51
+ * VATRates - v1.2.3
+ * Last update: 2017-02-01T13:32:49
  * MIT License
  */
 
@@ -266,7 +266,7 @@ var VATRates = {
     "rates": {
       "superReduced": false,
       "reduced": [5, 9],
-      "standard": 20,
+      "standard": 19,
       "parking": false
     }
   },

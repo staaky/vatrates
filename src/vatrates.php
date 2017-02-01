@@ -253,7 +253,7 @@ $VATRates = array(
     "rates" => array(
       "superReduced" => false,
       "reduced" => array(5, 9),
-      "standard" => 20,
+      "standard" => 19,
       "parking" => false
     )
   ),
