@@ -277,7 +277,7 @@ if ($vatRates->isVATCountry('RO')) {
 
 ### getCountry(countryCode)
 
-Another approach is to use `getCountry()`, it returns a `VATCountry` or `undefined` if the country doesn't use VAT. With a `VATCountry` you'll have all the VAT rate functions and some extra helpers.
+Another approach is to use `getCountry()`, it returns a `VATCountry` or `null` if the country doesn't use VAT. With a `VATCountry` you'll have all the VAT rate functions and some extra helpers.
 
 ``` php
 $vatRates = new VATRates();
