@@ -4,6 +4,8 @@ _Up-to-date European VAT Rates_
 
 [vatrates.nickstakenburg.com](http://vatrates.nickstakenburg.com)
 
+VAT rates stored in `JSON` format, with [Javascript](#javascript) and [PHP](#php) classes for easy access.
+
 ## Install
 
 Install through npm:
