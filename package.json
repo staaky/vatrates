@@ -9,7 +9,7 @@
     "tax",
     "EU"
   ],
-  "homepage": "http://github.com/staaky/vatrates",
+  "homepage": "http://vatrates.nickstakenburg.com",
   "bugs": "http://github.com/staaky/vatrates/issues",
   "main": "./dist/vatrates.js",
   "repository": {
