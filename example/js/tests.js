@@ -1,8 +1,13 @@
-// Tests
+/**
+ * Tests
+ *
+ * Compares all 3 tables to look for differences
+ */
+
 (function($) {
   var Tests = {
     run: function() {
-      var lists = $('.list'),
+      var lists  = $('.list'),
           errors = [];
 
       // check if all files load
@@ -11,8 +16,8 @@
         var type = $(list).attr('id').replace(/^list-/, '');
         if ($(list).find('table tr:not(.legenda)').length < 0 ||
           $(list).html().indexOf('Netherlands') < 0) {
-          errors.push('Error: vatrates.' + type + " won't load, it might have a syntax error");
-          $(list).find('h1').addClass('error');
+          errors.push('Error: ' + type.toUpperCase() + " won't load, it might have a syntax error");
+          $(list).find('h2').addClass('error');
         } else {
           loaded++;
         }
@@ -37,7 +42,7 @@
             var compareWith = $($(jsTable.find('tr')[y]).find('td')[x]);
 
             if (value != $.trim(compareWith.html())) {
-              compareWith.add(td).addClass('error');
+              compareWith.add(td).addClass('has-error');
               differences++;
             }
           });
@@ -54,17 +59,16 @@
     },
 
     error: function(errors) {
-      $('#results').append(errors.join('<br>'))
-                   .addClass('error');
+      $('#results').show().addClass('results-error');
+      $('#results .message').html(errors.join('<br>'));
     },
 
     success: function(msg) {
-      if (msg) $('#results').append(msg);
-      $("#results").addClass('success');
+      if (msg) $('#results .message').html(msg);
+      $("#results").show().addClass('results-success');
     }
   };
 
-  $(document).ready(function() {
-    Tests.run();
-  });
+  window.Tests = Tests;
+
 })(jQuery);

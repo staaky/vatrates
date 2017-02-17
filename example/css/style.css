@@ -1,0 +1,258 @@
+html {
+    background: #232323;
+    font-size: 100%;
+    min-height: 100%;
+    width: 100%;
+    margin-bottom: 1px;
+    overflow: -moz-scrollbars-vertical !important;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, input, textarea, select {
+}
+
+body {
+    background-color: #232323;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 30px;
+    color: #efefef;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #efefef;
+    font-family: "Merriweather", serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 58px;
+    margin-bottom: 3px;
+    color: #09db84;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 4px;
+    color: #09db84;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+a, a:hover, a:focus {
+    color: #09db84;
+}
+
+/* Bootstrap table overwrites */
+.table td {
+    border-color: #131313;
+}
+
+.table .thead-inverse th {
+    background: #161616;
+    border-color: #101010;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, .20);
+}
+
+.table-hover tbody tr:nth-of-type(odd):hover {
+    background-color: rgba(0, 0, 0, .35);
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.table-hover tbody tr:nth-of-type(even):hover {
+    background-color: rgba(0, 0, 0, .40);
+}
+
+pre {
+    color: #efefef;
+}
+
+/* Bootstrap overwrites */
+.btn-primary {
+    color: #fff;
+    background-color: #4a4a4a;
+    border-color: #222;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #555;
+    border-color: #333;
+}
+
+.form-control {
+    background-color: #e3e3e3;
+    color: #000;
+}
+
+.form-control:focus {
+    background-color: #efefef;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 2px rgba(10, 156, 225, 0.4) !important;
+    outline: 0 none !important;
+}
+
+/* Dates */
+#dates {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+#dates .date-years {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+/*@media screen and (max-width: 800px) {*/
+/*#dates .date-years .year { display: none; }*/
+/*}*/
+/*@media screen and (max-width: 900px) {*/
+/*#dates .date-years .year:first-child { display: none; }*/
+/*}*/
+
+#dates .year {
+    display: flex;
+    padding: 0 5px;
+    margin-bottom: 5px;
+}
+
+#dates .year.selected .btn {
+    background: #445fab;
+}
+
+#dates .date-current {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-basis: 170px;
+    min-width: 170px;
+    padding-left: 5px;
+}
+
+/*#datepicker-group {*/
+/*float: right;*/
+/*}*/
+
+/* error/success message */
+#results {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#results .message {
+    padding: 0.4rem 0.8rem;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .75);
+    display: flex;
+}
+
+.results-error .message,
+.has-error {
+    background: #ee1111 !important;
+    color: #fff !important;
+}
+
+.results-success .message {
+    background: #44ab44 !important;
+    color: #efefef !important;
+}
+
+/* Agenda */
+#today {
+    cursor: pointer;
+}
+
+/* GitHub link */
+.github {
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 2;
+    display: none;
+}
+
+.github .ribbon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #e8341a;
+    margin: 0;
+    border-radius: 50% 50%;
+}
+
+.github:hover .ribbon {
+    background: #1492e2;
+}
+
+.github i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: url('github_mark.svg') 50% 50% no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    margin: 5px 5px 0 0;
+    border-radius: 50% 50%;
+}
+
+@supports (transform:rotate(45deg)) {
+    .github {
+        top: 0;
+        right: 0;
+        width: 90px;
+        height: 90px;
+        display: block;
+    }
+
+    .github .ribbon {
+        margin: 0;
+        margin-right: -60px;
+        width: 200px;
+        height: 40px;
+        transform: rotate(45deg);
+        border-radius: 0;
+    }
+
+    .github i {
+        margin: 15px 15px 0 0;
+    }
+}
+
