@@ -4,9 +4,21 @@
   "authors": [
     {
       "name": "Nick Stakenburg",
-      "email": "nick@nickstakenburg.com"
+      "email": "nick@nickstakenburg.com",
+      "homepage": "http://www.nickstakenburg.com"
     }
   ],
+  "homepage": "http://vatrates.nickstakenburg.com",
+  "keywords": [
+    "VAT",
+    "rates",
+    "tax",
+    "EU"
+  ],
+  "support": {
+    "docs": "http://vatrates.nickstakenburg.com/#php",
+    "issues": "http://github.com/staaky/vatrates/issues"
+  },
   "license": "MIT",
   "autoload": {
     "psr-4": {
