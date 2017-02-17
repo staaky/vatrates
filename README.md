@@ -451,4 +451,4 @@ Data on historic VAT rates is also appreciated. This can be hard to track down, 
 
 ## License
 
-VATRates is [MIT Licensed](http://choosealicense.com/licenses/mit)
+VATRates is [MIT Licensed](https://raw.githubusercontent.com/staaky/vatrates/master/LICENSE)
