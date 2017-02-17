@@ -1,8 +1,8 @@
-# VAT Rates
+# VATRates
 
 _Up-to-date European VAT Rates_
 
-[vatrates.nickstakenburg.com](vatrates.nickstakenburg.com)
+[vatrates.nickstakenburg.com](http://vatrates.nickstakenburg.com)
 
 ## Install
 
