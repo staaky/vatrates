@@ -8,13 +8,28 @@ VAT rates stored in `JSON` format, with [Javascript](#javascript) and [PHP](#php
 
 ## Install
 
-Install through npm:
+#### Download
+
+* [vatrates.min.js](https://unpkg.com/vatrates@2/dist/vatrates.min.js) minified
+* [vatrates.js](https://unpkg.com/vatrates@2/dist/vatrates.js) un-minified
+
+#### CDN
+
+``` html
+<script src='https://unpkg.com/vatrates@2/dist/vatrates.min.js'></script>
+<!-- or -->
+<script src='https://unpkg.com/vatrates@2/dist/vatrates.js'></script>
+```
+
+#### NPM
 
 ```
 npm install vatrates
 ```
 
-For the PHP package, use composer:
+#### Composer
+
+For the PHP package:
 
 ```
 composer require staaky/vatrates
@@ -28,11 +43,11 @@ Require vatrates or use a script tag to include vatrates.js:
 var vatRates = require('vatrates');
 ```
 
-```
-<script type='text/javascript' src='vatrates.js'></script>
+``` html
+<script src='vatrates.js'></script>
 ```
 
-Create an instance using `new VATRates()` and use the `isVATCountry()` check before calling any of the other functions that return VAT rates.
+An instance created with `new VATRates()` gives you several VAT rate functions. It's recommended to always use an `isVATCountry()` check before using them, like this:
 
 ``` js
 var VATRates = require('vatrates');
@@ -219,17 +234,19 @@ if ((country = vatRates.getCountry('LU'))) {
 
 ## PHP
 
-After installing through composer use `Staaky\VATRates\VATRates`
+After installing through Composer use `Staaky\VATRates\VATRates`
+
+```
+composer require staaky/vatrates
+```
 
 ``` php
 use Staaky\VATRates\VATRates;
 ```
 
-Create an instance using `new VATRates()` and use the `isVATCountry()` check before calling any of the other functions that return VAT rates.
+An instance created with `new VATRates()` gives you several VAT rate functions. It's recommended to always use an `isVATCountry()` check before using them, like this:
 
 ``` php
-use Staaky\VATRates\VATRates;
-
 $vatRates = new VATRates();
 if ($vatRates->isVATCountry('RO')) {
     var_dump($vatRates->getSuperReducedRate('RO')); // -> null
@@ -445,9 +462,11 @@ npm run peridot
 
 VAT rates are kept up to date **manually** using data from the [European Commission](http://ec.europa.eu/taxation_customs/resources/documents/taxation/vat/how_vat_works/rates/vat_rates_en.pdf) and [VATLive.com](http://www.vatlive.com). Initial historic rates are based on data from [jsonvat.com](http://jsonvat.com).
 
-If you notice an incorrect rate please [create an issue](https://github.com/staaky/vatrates/issues) or send a pull request. Future VAT changes can also be added to the `JSON` file. If you know of an upcoming change that isn't there yet, please let me know.
+If you notice an incorrect rate please [create an issue](https://github.com/staaky/vatrates/issues) or send a pull request. Future VAT changes can also be added to the `JSON` file. If you know of an upcoming change that isn't listed yet, please let me know.
 
 Data on historic VAT rates is also appreciated. This can be hard to track down, especially the non-standard rates.
+
+[![Flattr VATRates](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=staaky&url=http://vatrates.nickstakenburg.com&tags=github&category=software)
 
 ## License
 
