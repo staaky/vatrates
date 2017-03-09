@@ -132,7 +132,7 @@ This is identical to:
 var vatRates = new VATRates(new Date('2015-01-01'));
 ```
 
-> All other functions takes this date into account, so make sure to always set the date first.
+> All other functions take this date into account, so make sure to always set the date first.
 
 ### isVATCountry(countryCode)
 
@@ -326,7 +326,7 @@ This is identical to:
 $vatRates = new VATRates(new DateTime('2015-01-01'));
 ```
 
-> All other functions takes this date into account, so make sure to always set the date first.
+> All other functions take this date into account, so make sure to always set the date first.
 
 ### isVATCountry($countryCode)
 
