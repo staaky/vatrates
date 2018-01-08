@@ -17,7 +17,7 @@ function VATRates(date) {
 VATRates.prototype.setDate = function(date) {
   if (!date) {
     date = new Date();
-  } else if (typeof date == 'string') {
+  } else if (typeof date === 'string') {
     date = new Date(date);
   }
 
@@ -69,7 +69,7 @@ VATRates.prototype.getCountry = function(countryCode) {
       country;
 
   for (var i = 0; i < countries.length; i++) {
-    if (countries[i].getCode() == countryCode || countries[i].getCountryCode() == countryCode) {
+    if (countries[i].getCode() === countryCode || countries[i].getCountryCode() === countryCode) {
       country = countries[i];
     }
   }

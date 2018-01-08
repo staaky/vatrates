@@ -1,5 +1,5 @@
 /*!
- * VATRates v2.0.0
+ * VATRates v2.0.1
  * MIT License
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -91,6 +91,17 @@ module.exports = {
 			"code": "AT",
 			"countryCode": "AT",
 			"periods": [
+				{
+					"effectiveFrom": "2016-01-01",
+					"rates": {
+						"reduced": [
+							10,
+							13
+						],
+						"standard": 20,
+						"parking": 13
+					}
+				},
 				{
 					"effectiveFrom": "0000-01-01",
 					"rates": {
@@ -364,6 +375,16 @@ module.exports = {
 			"code": "LV",
 			"countryCode": "LV",
 			"periods": [
+				{
+					"effectiveFrom": "2018-01-01",
+					"rates": {
+						"superReduced": 5,
+						"reduced": [
+							12
+						],
+						"standard": 21
+					}
+				},
 				{
 					"effectiveFrom": "0000-01-01",
 					"rates": {
@@ -956,7 +977,7 @@ function VATRates(date) {
 VATRates.prototype.setDate = function (date) {
   if (!date) {
     date = new Date();
-  } else if (typeof date == 'string') {
+  } else if (typeof date === 'string') {
     date = new Date(date);
   }
 
@@ -1008,7 +1029,7 @@ VATRates.prototype.getCountry = function (countryCode) {
       country;
 
   for (var i = 0; i < countries.length; i++) {
-    if (countries[i].getCode() == countryCode || countries[i].getCountryCode() == countryCode) {
+    if (countries[i].getCode() === countryCode || countries[i].getCountryCode() === countryCode) {
       country = countries[i];
     }
   }

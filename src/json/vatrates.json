@@ -6,6 +6,14 @@
       "countryCode": "AT",
       "periods": [
         {
+          "effectiveFrom": "2016-01-01",
+          "rates": {
+            "reduced": [10, 13],
+            "standard": 20,
+            "parking": 13
+          }
+        },
+        {
           "effectiveFrom": "0000-01-01",
           "rates": {
             "reduced": [10],
@@ -234,6 +242,14 @@
       "code": "LV",
       "countryCode": "LV",
       "periods": [
+        {
+          "effectiveFrom": "2018-01-01",
+          "rates": {
+            "superReduced": 5,
+            "reduced": [12],
+            "standard": 21
+          }
+        },
         {
           "effectiveFrom": "0000-01-01",
           "rates": {
