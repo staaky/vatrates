@@ -1,7 +1,7 @@
 {
   "name": "vatrates",
   "title": "VATRates",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Up-to-date European VAT Rates",
   "keywords": [
     "VAT",
@@ -45,7 +45,7 @@
     "mocha": "^3.2.0",
     "moment": "^2.17.1",
     "pikaday": "^1.5.1",
-    "require-dir": "^0.3.1",
+    "require-dir": "^1.0.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "webpack": "^2.2.1",

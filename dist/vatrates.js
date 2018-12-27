@@ -1,5 +1,5 @@
 /*!
- * VATRates v2.0.1
+ * VATRates v2.0.2
  * MIT License
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -477,6 +477,15 @@ module.exports = {
 			"code": "NL",
 			"countryCode": "NL",
 			"periods": [
+				{
+					"effectiveFrom": "2019-01-01",
+					"rates": {
+						"reduced": [
+							9
+						],
+						"standard": 21
+					}
+				},
 				{
 					"effectiveFrom": "2012-01-01",
 					"rates": {
