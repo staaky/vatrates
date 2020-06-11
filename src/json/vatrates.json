@@ -127,6 +127,20 @@
       "countryCode": "DE",
       "periods": [
         {
+          "effectiveFrom": "2021-01-01",
+          "rates": {
+            "reduced": [7],
+            "standard": 19
+          }
+        },
+        {
+          "effectiveFrom": "2020-07-01",
+          "rates": {
+            "reduced": [5],
+            "standard": 16
+          }
+        },
+        {
           "effectiveFrom": "2007-01-01",
           "rates": {
             "reduced": [7],

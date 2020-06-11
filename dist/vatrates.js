@@ -15,41 +15,41 @@
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
-
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-
+/******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
 /******/ 			l: false,
 /******/ 			exports: {}
 /******/ 		};
-
+/******/
 /******/ 		// Execute the module function
 /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.l = true;
-
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-
-
+/******/
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
-
+/******/
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
-
+/******/
 /******/ 	// identity function for calling harmony imports with the correct context
 /******/ 	__webpack_require__.i = function(value) { return value; };
-
+/******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
 /******/ 		if(!__webpack_require__.o(exports, name)) {
@@ -60,7 +60,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 			});
 /******/ 		}
 /******/ 	};
-
+/******/
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
 /******/ 	__webpack_require__.n = function(module) {
 /******/ 		var getter = module && module.__esModule ?
@@ -69,13 +69,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 		__webpack_require__.d(getter, 'a', getter);
 /******/ 		return getter;
 /******/ 	};
-
+/******/
 /******/ 	// Object.prototype.hasOwnProperty.call
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-
+/******/
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
-
+/******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
@@ -84,620 +84,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = {
-	"rates": [
-		{
-			"name": "Austria",
-			"code": "AT",
-			"countryCode": "AT",
-			"periods": [
-				{
-					"effectiveFrom": "2016-01-01",
-					"rates": {
-						"reduced": [
-							10,
-							13
-						],
-						"standard": 20,
-						"parking": 13
-					}
-				},
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							10
-						],
-						"standard": 20,
-						"parking": 12
-					}
-				}
-			]
-		},
-		{
-			"name": "Belgium",
-			"code": "BE",
-			"countryCode": "BE",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							6,
-							12
-						],
-						"standard": 21,
-						"parking": 12
-					}
-				}
-			]
-		},
-		{
-			"name": "Bulgaria",
-			"code": "BG",
-			"countryCode": "BG",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							9
-						],
-						"standard": 20
-					}
-				}
-			]
-		},
-		{
-			"name": "Croatia",
-			"code": "HR",
-			"countryCode": "HR",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							5,
-							13
-						],
-						"standard": 25
-					}
-				}
-			]
-		},
-		{
-			"name": "Cyprus",
-			"code": "CY",
-			"countryCode": "CY",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							5,
-							9
-						],
-						"standard": 19
-					}
-				}
-			]
-		},
-		{
-			"name": "Czech Republic",
-			"code": "CZ",
-			"countryCode": "CZ",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							10,
-							15
-						],
-						"standard": 21
-					}
-				}
-			]
-		},
-		{
-			"name": "Denmark",
-			"code": "DK",
-			"countryCode": "DK",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"standard": 25
-					}
-				}
-			]
-		},
-		{
-			"name": "Estonia",
-			"code": "EE",
-			"countryCode": "EE",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							9
-						],
-						"standard": 20
-					}
-				}
-			]
-		},
-		{
-			"name": "Germany",
-			"code": "DE",
-			"countryCode": "DE",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							7
-						],
-						"standard": 19
-					}
-				}
-			]
-		},
-		{
-			"name": "Greece",
-			"code": "EL",
-			"countryCode": "GR",
-			"periods": [
-				{
-					"effectiveFrom": "2016-06-01",
-					"rates": {
-						"reduced": [
-							6,
-							13
-						],
-						"standard": 24
-					}
-				},
-				{
-					"effectiveFrom": "2015-01-01",
-					"rates": {
-						"reduced": [
-							6,
-							13
-						],
-						"standard": 23
-					}
-				},
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							6.5,
-							13
-						],
-						"standard": 23
-					}
-				}
-			]
-		},
-		{
-			"name": "Finland",
-			"code": "FI",
-			"countryCode": "FI",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							10,
-							14
-						],
-						"standard": 24
-					}
-				}
-			]
-		},
-		{
-			"name": "France",
-			"code": "FR",
-			"countryCode": "FR",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"superReduced": 2.1,
-						"reduced": [
-							5.5,
-							10
-						],
-						"standard": 20
-					}
-				}
-			]
-		},
-		{
-			"name": "Hungary",
-			"code": "HU",
-			"countryCode": "HU",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							5,
-							18
-						],
-						"standard": 27
-					}
-				}
-			]
-		},
-		{
-			"name": "Ireland",
-			"code": "IE",
-			"countryCode": "IE",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"superReduced": 4.8,
-						"reduced": [
-							9,
-							13.5
-						],
-						"standard": 23,
-						"parking": 13.5
-					}
-				}
-			]
-		},
-		{
-			"name": "Italy",
-			"code": "IT",
-			"countryCode": "IT",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"superReduced": 4,
-						"reduced": [
-							5,
-							10
-						],
-						"standard": 22
-					}
-				}
-			]
-		},
-		{
-			"name": "Latvia",
-			"code": "LV",
-			"countryCode": "LV",
-			"periods": [
-				{
-					"effectiveFrom": "2018-01-01",
-					"rates": {
-						"superReduced": 5,
-						"reduced": [
-							12
-						],
-						"standard": 21
-					}
-				},
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							12
-						],
-						"standard": 21
-					}
-				}
-			]
-		},
-		{
-			"name": "Lithuania",
-			"code": "LT",
-			"countryCode": "LT",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							5,
-							9
-						],
-						"standard": 21
-					}
-				}
-			]
-		},
-		{
-			"name": "Luxembourg",
-			"code": "LU",
-			"countryCode": "LU",
-			"periods": [
-				{
-					"effectiveFrom": "2016-01-01",
-					"rates": {
-						"superReduced": 3,
-						"reduced": [
-							8
-						],
-						"standard": 17,
-						"parking": 14
-					}
-				},
-				{
-					"effectiveFrom": "2015-01-01",
-					"rates": {
-						"superReduced": 3,
-						"reduced": [
-							8,
-							14
-						],
-						"standard": 17,
-						"parking": 12
-					}
-				},
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"superReduced": 3,
-						"reduced": [
-							6,
-							12
-						],
-						"standard": 15,
-						"parking": 12
-					}
-				}
-			]
-		},
-		{
-			"name": "Malta",
-			"code": "MT",
-			"countryCode": "MT",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							5,
-							7
-						],
-						"standard": 18
-					}
-				}
-			]
-		},
-		{
-			"name": "Netherlands",
-			"code": "NL",
-			"countryCode": "NL",
-			"periods": [
-				{
-					"effectiveFrom": "2019-01-01",
-					"rates": {
-						"reduced": [
-							9
-						],
-						"standard": 21
-					}
-				},
-				{
-					"effectiveFrom": "2012-01-01",
-					"rates": {
-						"reduced": [
-							6
-						],
-						"standard": 21
-					}
-				},
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							6
-						],
-						"standard": 19
-					}
-				}
-			]
-		},
-		{
-			"name": "Poland",
-			"code": "PL",
-			"countryCode": "PL",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							5,
-							8
-						],
-						"standard": 23
-					}
-				}
-			]
-		},
-		{
-			"name": "Portugal",
-			"code": "PT",
-			"countryCode": "PT",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							6,
-							13
-						],
-						"standard": 23,
-						"parking": 13
-					}
-				}
-			]
-		},
-		{
-			"name": "Romania",
-			"code": "RO",
-			"countryCode": "RO",
-			"periods": [
-				{
-					"effectiveFrom": "2017-01-01",
-					"rates": {
-						"reduced": [
-							5,
-							9
-						],
-						"standard": 19
-					}
-				},
-				{
-					"effectiveFrom": "2016-01-01",
-					"rates": {
-						"reduced": [
-							5,
-							9
-						],
-						"standard": 20
-					}
-				},
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							5,
-							9
-						],
-						"standard": 24
-					}
-				}
-			]
-		},
-		{
-			"name": "Slovakia",
-			"code": "SK",
-			"countryCode": "SK",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							10
-						],
-						"standard": 20
-					}
-				}
-			]
-		},
-		{
-			"name": "Slovenia",
-			"code": "SI",
-			"countryCode": "SI",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							9.5
-						],
-						"standard": 22
-					}
-				}
-			]
-		},
-		{
-			"name": "Spain",
-			"code": "ES",
-			"countryCode": "ES",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"superReduced": 4,
-						"reduced": [
-							10
-						],
-						"standard": 21
-					}
-				}
-			]
-		},
-		{
-			"name": "Sweden",
-			"code": "SE",
-			"countryCode": "SE",
-			"periods": [
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							6,
-							12
-						],
-						"standard": 25
-					}
-				}
-			]
-		},
-		{
-			"name": "United Kingdom",
-			"code": "UK",
-			"countryCode": "GB",
-			"periods": [
-				{
-					"effectiveFrom": "2011-01-04",
-					"rates": {
-						"reduced": [
-							5
-						],
-						"standard": 20
-					}
-				},
-				{
-					"effectiveFrom": "2010-01-01",
-					"rates": {
-						"reduced": [
-							5
-						],
-						"standard": 17.5
-					}
-				},
-				{
-					"effectiveFrom": "2008-12-01",
-					"rates": {
-						"reduced": [
-							5
-						],
-						"standard": 15
-					}
-				},
-				{
-					"effectiveFrom": "1991-03-19",
-					"rates": {
-						"reduced": [
-							8
-						],
-						"standard": 17.5
-					}
-				},
-				{
-					"effectiveFrom": "0000-01-01",
-					"rates": {
-						"reduced": [
-							8
-						],
-						"standard": 15
-					}
-				}
-			]
-		}
-	]
-};
+module.exports = {"rates":[{"name":"Austria","code":"AT","countryCode":"AT","periods":[{"effectiveFrom":"2016-01-01","rates":{"reduced":[10,13],"standard":20,"parking":13}},{"effectiveFrom":"0000-01-01","rates":{"reduced":[10],"standard":20,"parking":12}}]},{"name":"Belgium","code":"BE","countryCode":"BE","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[6,12],"standard":21,"parking":12}}]},{"name":"Bulgaria","code":"BG","countryCode":"BG","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[9],"standard":20}}]},{"name":"Croatia","code":"HR","countryCode":"HR","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[5,13],"standard":25}}]},{"name":"Cyprus","code":"CY","countryCode":"CY","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[5,9],"standard":19}}]},{"name":"Czech Republic","code":"CZ","countryCode":"CZ","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[10,15],"standard":21}}]},{"name":"Denmark","code":"DK","countryCode":"DK","periods":[{"effectiveFrom":"0000-01-01","rates":{"standard":25}}]},{"name":"Estonia","code":"EE","countryCode":"EE","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[9],"standard":20}}]},{"name":"Germany","code":"DE","countryCode":"DE","periods":[{"effectiveFrom":"2021-01-01","rates":{"reduced":[7],"standard":19}},{"effectiveFrom":"2020-07-01","rates":{"reduced":[5],"standard":16}},{"effectiveFrom":"2007-01-01","rates":{"reduced":[7],"standard":19}},{"effectiveFrom":"0000-01-01","rates":{"reduced":[7],"standard":16}}]},{"name":"Greece","code":"EL","countryCode":"GR","periods":[{"effectiveFrom":"2016-06-01","rates":{"reduced":[6,13],"standard":24}},{"effectiveFrom":"2015-01-01","rates":{"reduced":[6,13],"standard":23}},{"effectiveFrom":"0000-01-01","rates":{"reduced":[6.5,13],"standard":23}}]},{"name":"Finland","code":"FI","countryCode":"FI","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[10,14],"standard":24}}]},{"name":"France","code":"FR","countryCode":"FR","periods":[{"effectiveFrom":"0000-01-01","rates":{"superReduced":2.1,"reduced":[5.5,10],"standard":20}}]},{"name":"Hungary","code":"HU","countryCode":"HU","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[5,18],"standard":27}}]},{"name":"Ireland","code":"IE","countryCode":"IE","periods":[{"effectiveFrom":"0000-01-01","rates":{"superReduced":4.8,"reduced":[9,13.5],"standard":23,"parking":13.5}}]},{"name":"Italy","code":"IT","countryCode":"IT","periods":[{"effectiveFrom":"0000-01-01","rates":{"superReduced":4,"reduced":[5,10],"standard":22}}]},{"name":"Latvia","code":"LV","countryCode":"LV","periods":[{"effectiveFrom":"2018-01-01","rates":{"superReduced":5,"reduced":[12],"standard":21}},{"effectiveFrom":"0000-01-01","rates":{"reduced":[12],"standard":21}}]},{"name":"Lithuania","code":"LT","countryCode":"LT","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[5,9],"standard":21}}]},{"name":"Luxembourg","code":"LU","countryCode":"LU","periods":[{"effectiveFrom":"2016-01-01","rates":{"superReduced":3,"reduced":[8],"standard":17,"parking":14}},{"effectiveFrom":"2015-01-01","rates":{"superReduced":3,"reduced":[8,14],"standard":17,"parking":12}},{"effectiveFrom":"0000-01-01","rates":{"superReduced":3,"reduced":[6,12],"standard":15,"parking":12}}]},{"name":"Malta","code":"MT","countryCode":"MT","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[5,7],"standard":18}}]},{"name":"Netherlands","code":"NL","countryCode":"NL","periods":[{"effectiveFrom":"2019-01-01","rates":{"reduced":[9],"standard":21}},{"effectiveFrom":"2012-01-01","rates":{"reduced":[6],"standard":21}},{"effectiveFrom":"0000-01-01","rates":{"reduced":[6],"standard":19}}]},{"name":"Poland","code":"PL","countryCode":"PL","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[5,8],"standard":23}}]},{"name":"Portugal","code":"PT","countryCode":"PT","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[6,13],"standard":23,"parking":13}}]},{"name":"Romania","code":"RO","countryCode":"RO","periods":[{"effectiveFrom":"2017-01-01","rates":{"reduced":[5,9],"standard":19}},{"effectiveFrom":"2016-01-01","rates":{"reduced":[5,9],"standard":20}},{"effectiveFrom":"0000-01-01","rates":{"reduced":[5,9],"standard":24}}]},{"name":"Slovakia","code":"SK","countryCode":"SK","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[10],"standard":20}}]},{"name":"Slovenia","code":"SI","countryCode":"SI","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[9.5],"standard":22}}]},{"name":"Spain","code":"ES","countryCode":"ES","periods":[{"effectiveFrom":"0000-01-01","rates":{"superReduced":4,"reduced":[10],"standard":21}}]},{"name":"Sweden","code":"SE","countryCode":"SE","periods":[{"effectiveFrom":"0000-01-01","rates":{"reduced":[6,12],"standard":25}}]},{"name":"United Kingdom","code":"UK","countryCode":"GB","periods":[{"effectiveFrom":"2011-01-04","rates":{"reduced":[5],"standard":20}},{"effectiveFrom":"2010-01-01","rates":{"reduced":[5],"standard":17.5}},{"effectiveFrom":"2008-12-01","rates":{"reduced":[5],"standard":15}},{"effectiveFrom":"1991-03-19","rates":{"reduced":[8],"standard":17.5}},{"effectiveFrom":"0000-01-01","rates":{"reduced":[8],"standard":15}}]}]}
 
 /***/ }),
 /* 1 */
