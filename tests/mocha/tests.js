@@ -202,7 +202,6 @@ describe('VATCountry()', function() {
   describe('limitedCutsForGermany', function() {
     it('should return 16% and 5% after 2020-07-01', function() {
       vatRates.setDate('2020-07-01');
-      debugger
       expect(vatRates.getCountry('DE').getStandardRate()).to.equal(16);
       expect(vatRates.getCountry('DE').getReducedRates()).to.eql([5]);
     });
