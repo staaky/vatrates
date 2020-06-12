@@ -1,5 +1,5 @@
 /*!
- * VATRates v2.0.2
+ * VATRates v2.0.3
  * MIT License
  */
 (function webpackUniversalModuleDefinition(root, factory) {
