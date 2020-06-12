@@ -198,4 +198,18 @@ describe('VATCountry()', function() {
       expect(vatRates.getCountry('DK').getParkingRate()).to.be.a('undefined');
     });
   });
+
+  describe('limitedCutsForGermany', function() {
+    it('should return 16% and 5% after 2020-07-01', function() {
+      vatRates.setDate('2020-07-01');
+      expect(vatRates.getCountry('DE').getStandardRate()).to.equal(16);
+      expect(vatRates.getCountry('DE').getReducedRates()).to.eql([5]);
+    });
+
+    it('should return 19% and 7% again after 2021-01-01', function() {
+      vatRates.setDate('2021-01-01');
+      expect(vatRates.getCountry('DE').getStandardRate()).to.equal(19);
+      expect(vatRates.getCountry('DE').getReducedRates()).to.eql([7]);
+    });
+  });
 });
